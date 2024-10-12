@@ -1,0 +1,4 @@
+product: WoolVest, price: 1000
+product: WoolVest, price: 1000
+product: Cloak, price: 1000
+product: Cloak, price: 1000

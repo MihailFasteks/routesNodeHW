@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О нас - FastexShop</title>
+    <style>
+        body {
+            background-color: rgb(244, 240, 240);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #333;
+        }
+
+        .header {
+            background-color: rgb(168, 13, 13);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 15vh;
+            position: relative;
+        }
+
+        .header .title {
+            font-size: 36px;
+            text-align: center;
+            margin: 0;
+            flex: 1;
+        }
+
+        .header .auth-links {
+            display: flex;
+            gap: 15px;
+            position: absolute;
+            right: 20px;
+        }
+
+        .header .auth-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+        }
+
+        .leftSB {
+            background-color: rgb(200, 200, 200);
+            width: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start (left) */
+            justify-content: center; /* Center items vertically */
+        }
+
+        .leftSB a {
+            display: block;
+            margin-bottom: 10px;
+            color: rgb(168, 13, 13);
+            text-decoration: none;
+            font-size: 18px;
+            text-align: left; /* Align text to the left */
+        }
+        .leftSB a:hover {
+            background-color: rgb(168, 13, 13);
+            color: white;
+        }
+
+        .main-content-container {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .main-content {
+            max-width: 800px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+        }
+
+        .main-content h1 {
+            font-size: 32px;
+            color: rgb(168, 13, 13);
+            text-align: center;
+            margin-top: 0;
+        }
+
+        .main-content h2 {
+            font-size: 24px;
+            color: rgb(168, 13, 13);
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .main-content p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            background-color: rgb(168, 13, 13);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="title">FASTEX SHOP</div>
+        <div class="auth-links">
+            <a href="/register/">Регистрация</a>
+            <a href="/login/">Вход</a>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="leftSB">
+            <a href="/about/">О нас</a>
+            <a href="/news/">Новости</a>
+            <a href="/main/">На главную</a>
+        </div>
+        <div class="main-content-container">
+            <div class="main-content">
+                <h1>О нас</h1>
+
+                <p><strong>Добро пожаловать в FastexShop!</strong></p>
+
+                <p>Мы — ваш надежный партнер в мире онлайн-шопинга. FastexShop — это не просто магазин, это целый мир удобства и стиля, где вы найдете самые актуальные и востребованные товары. Наша цель — сделать ваш опыт покупок максимально комфортным и удовлетворяющим.</p>
+
+                <h2>Наша Миссия</h2>
+                <p>Мы стремимся предоставлять нашим клиентам качественные товары по конкурентоспособным ценам, сопровождая каждую покупку отличным обслуживанием. Мы понимаем, что каждый клиент уникален, поэтому наш ассортимент тщательно отобран для удовлетворения самых разнообразных потребностей.</p>
+
+                <h2>Наши Принципы</h2>
+                <ul>
+                    <li><strong>Качество:</strong> Мы работаем только с проверенными поставщиками и брендами, чтобы гарантировать высочайшее качество продукции.</li>
+                    <li><strong>Обслуживание:</strong> В нашем магазине вы получите индивидуальный подход и профессиональную помощь на каждом этапе покупки.</li>
+                    <li><strong>Удобство:</strong> Мы предлагаем простой и удобный процесс покупки, быструю доставку и гибкую систему возврата товаров.</li>
+                    <li><strong>Инновации:</strong> Мы постоянно обновляем наш ассортимент, чтобы предложить вам новейшие тренды и технологии.</li>
+                </ul>
+
+                <h2>Почему Мы?</h2>
+                <ul>
+                    <li><strong>Широкий Ассортимент:</strong> От электроники и одежды до аксессуаров и товаров для дома — у нас есть все, что вам нужно.</li>
+                    <li><strong>Конкурентные Цены:</strong> Мы предлагаем отличное соотношение цены и качества на все товары.</li>
+                    <li><strong>Удобный Сервис:</strong> Легкий и интуитивно понятный сайт, быстрая доставка и простое оформление заказа.</li>
+                </ul>
+
+                <h2>Наши Ценности</h2>
+                <p>Мы верим в честность, открытость и прозрачность. Наша команда работает с полной отдачей, чтобы сделать покупки в FastexShop простыми и приятными. Мы стремимся не только удовлетворить ваши ожидания, но и превзойти их.</p>
+
+                <p><strong>Спасибо, что выбрали FastexShop.</strong> Мы гордимся тем, что можем служить вам, и надеемся, что наш магазин станет вашим любимым местом для покупок. Если у вас есть какие-либо вопросы или предложения, не стесняйтесь связаться с нами. Мы всегда рады помочь!</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2024 FASTEX SHOP
+    </div>
+</body>
+</html>

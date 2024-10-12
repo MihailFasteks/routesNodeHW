@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FASTEX SHOP</title>
+    <style>
+        body {
+            background-color: rgb(244, 240, 240);
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+        }
+
+        .header {
+            background-color: rgb(168, 13, 13);
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center; /* Center all items horizontally */
+            height: 15vh;
+            position: relative; /* Position relative for child positioning */
+        }
+
+        .header .title {
+            font-size: 36px; /* Increase font size */
+            text-align: center; /* Center text */
+            margin: 0; /* Remove default margin */
+            position: absolute; /* Absolute positioning */
+            left: 50%; /* Move to the center horizontally */
+            transform: translateX(-50%); /* Adjust position to the center */
+        }
+
+        .header .auth-links {
+            display: flex;
+            gap: 15px; /* Space between links */
+            position: absolute; /* Absolute positioning for right-aligned links */
+            right: 20px; /* Distance from right edge */
+        }
+
+        .header .auth-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: row;
+            flex: 1;
+        }
+
+        .leftSB {
+            background-color: rgb(200, 200, 200);
+            width: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align items to the start (left) */
+            justify-content: center; /* Center items vertically */
+        }
+
+        .leftSB a {
+            display: block;
+            margin-bottom: 10px;
+            color: rgb(168, 13, 13);
+            text-decoration: none;
+            font-size: 18px;
+            text-align: left; /* Align text to the left */
+        }
+        .leftSB a:hover {
+            background-color: rgb(168, 13, 13);
+            color: white;
+        }
+
+        .main {
+            flex: 1;
+            padding: 20px;
+            box-sizing: border-box;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Center the cards */
+            gap: 20px; /* Space between cards */
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            text-align: center;
+            padding: 15px;
+            box-sizing: border-box;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .card .title {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .card .buy-button {
+            background-color: rgb(168, 13, 13);
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .card .buy-button:hover {
+            background-color: rgb(140, 10, 10);
+        }
+
+        .footer {
+            background-color: rgb(168, 13, 13);
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="title">FASTEX SHOP</div>
+            <div class="auth-links">
+                <a href="/register/">Регистрация</a>
+                <a href="/login/">Вход</a>
+            </div>
+        </div>
+        <div class="section">
+            <div class="leftSB">
+                <a href="/about/">О нас</a>
+                <a href="/news/">Новости</a>
+                <a href="/main/">На главную</a>
+            </div>
+            <div class="main">
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7095524/v1/l_20242-w40200z4-hrc_a.jpg" alt="Product 1">
+                    <div class="title">Жилет шерстяной</div>
+               
+                    <a href="/product/WoolVest/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7145580/v1/l_20242-w41462z8-ycq-86-63-90-179_a.jpg" alt="Product 2">
+                    <div class="title">Плащ хаки</div>
+               
+                    <a href="/product/Cloak/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7333684/v1/l_20242-w4cr44z8-309-80-59-87-178_a.jpg" alt="Product 3">
+                    <div class="title">Джинсовка</div>
+
+                    <a href="/product/JeansCoat/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7165862/v1/l_20242-w43037z1-lyd_a.jpg" alt="Product 4">
+                    <div class="title">Плащ-детский</div>
+
+                    <a href="/product/CloakChild/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7145580/v1/l_20242-w41462z8-rql_u.jpg" alt="Product 5">
+                    <div class="title">Плащ-дождевик</div>
+                    
+                    <a href="/product/RainCover/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7145580/v1/l_20242-w41462z8-yba_u.jpg" alt="Product 6">
+                    <div class="title">Плащ</div>
+                    <a href="/product/CloakSimple/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7158186/v1/l_20242-w42163z1-fdp_a.jpg" alt="Product 6">
+                    <div class="title">Жилетка</div>
+                  
+                    <a href="/product/Vest/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7201931/v1/l_20242-w46104z1-d5p_a.jpg" alt="Product 6">
+                    <div class="title">Жилетка</div>
+
+                    <a href="/product/Vest/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7127884/v1/l_20242-w40801z8-cvl_u.jpg" alt="Product 6">
+                    <div class="title">Пальто</div>
+           
+                    <a href="/product/Coat/price/1000" class="buy-button">Купить</a>
+                </div>
+                <div class="card">
+                    <img src="https://img-lcwaikiki.mncdn.com/mnresize/400/-/pim/productimages/20242/7171392/v1/l_20242-w43405z1-g7l_a.jpg" alt="Product 6">
+                    <div class="title">Жилетка</div>
+        
+                    <a href="/product/Vest/price/1000" class="buy-button">Купить</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2024 FASTEX SHOP
+        </div>
+    </div>
+</body>
+</html>
